@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="css/themes/metro/infragistics.theme.css" rel="stylesheet" />
+    <link href="css/structure/infragistics.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/jquery-ui-1.11.4.js"></script>
+    <script src="js/infragistics.core.js"></script>
+    <script src="js/infragistics.lob.js"></script>
+</head>
+<body>
+
+    <div id="dataGrid">
+        <!-- this is where grid will be initialized. -->
+    </div>
+
+<script>
+
+    //prepare data
+    var data = [
+        { FirstName: "John", LastName: "M.", ContactNo: "9898989801" },
+        { FirstName: "Raj", LastName: "Kumar", ContactNo: "9898989802" },
+        { FirstName: "Manoj", LastName: "Sarkar", ContactNo: "9898989803" },
+        { FirstName: "Neeraj", LastName: "Pal", ContactNo: "9898989804" },
+        { FirstName: "Praveen", LastName: "Yadav", ContactNo: "9898989805" },
+        { FirstName: "Shubham", LastName: "Saxena", ContactNo: "9898989806" },
+        { FirstName: "Vaibhav", LastName: "Kohli", ContactNo: "9898989807" }
+    ];
+
+
+    //on load
+    (function ($) {
+        //initialize the grid
+        $('#dataGrid')
+            .igGrid({
+                dataSource: data
+            });
+    })(jQuery);
+
+
+</script>
+</body>
+</html>
